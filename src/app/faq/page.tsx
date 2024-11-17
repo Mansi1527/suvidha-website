@@ -2,7 +2,7 @@ import React from 'react'
 import Faqs from '../components/detailsAccount/faqs'
 const page = () => {
   return (
-    <div>
+    <div className=''>
       <Faqs/>
     </div>
   )

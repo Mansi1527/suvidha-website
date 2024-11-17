@@ -34,7 +34,7 @@ const GetHelp = () => {
       </div>
 
       {/* FAQ Section */}
-      <div>
+      <div className='h-screen'>
         <h1 className="md:text-2xl  pl-5 md:pl-0 font-semibold text-gray-500 mt-10">FAQ</h1>
         <div className="space-y-6 md:mt-5 mt-2 px-5 md:px-0">
           <div className="p-4 border border-gray-200 rounded-lg">

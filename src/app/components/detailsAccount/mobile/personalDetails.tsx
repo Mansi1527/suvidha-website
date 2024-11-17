@@ -1,7 +1,7 @@
 import React from 'react';
 import { User, CalendarDays, Mail } from 'lucide-react';
 import Link from 'next/link';
-import PersonalDetailsMobile from './mobile/personalDetails';
+
 // Define the type for the props
 interface PersonalDetailsProps {
   name: string;
@@ -9,7 +9,7 @@ interface PersonalDetailsProps {
   dob: number;  // You can change this to a Date type if needed
 }
 
-const PersonalDetails: React.FC<PersonalDetailsProps> = ({ name, email, dob }) => {
+const PersonalDetailsMobile: React.FC<PersonalDetailsProps> = ({ name, email, dob }) => {
   const data = [
     {
       logo: <User  size={20} />,
@@ -34,7 +34,7 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ name, email, dob }) =
         {data.map((items, index) => (
           <div
             key={index}
-            className="bg-[#f1f3f3] rounded-xl py-3 px-2 flex items-center space-x-3"  
+            className="bg-[#e1e2e2] rounded-xl py-3 px-2 flex items-center space-x-3"  
           >
             <div className='text-gray-500'>{items.logo}</div>
             <div>
@@ -60,4 +60,4 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ name, email, dob }) =
   );
 };
 
-export default PersonalDetails;
+export default PersonalDetailsMobile;

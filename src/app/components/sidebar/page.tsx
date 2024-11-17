@@ -21,7 +21,7 @@ const Page = () => {
   ];
 
   return (
-    <div className="hidden md:block max-w-[90%] md:max-w-[26%] xl:mx-auto lg:px-5">
+    <div className="hidden md:block max-w-[90%] md:max-w-[26%] ml-16">
       {/* First Section */}
       <div className="bg-white mt-10 rounded-lg overflow-hidden shadow-md">
         <ul className="space-y-4 pb-5">

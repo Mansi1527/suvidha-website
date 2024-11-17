@@ -42,8 +42,8 @@ const faqs = () => {
   );
 
   return (
-    <div className="flex justify-center p-5">
-      <div className="max-w-[80%] min-w-[80%]">
+    <div className="flex justify-center p-5 ">
+      <div className="md:max-w-[80%] md:min-w-[80%]">
         <h1 className="text-3xl font-semibold mb-3">FAQs</h1>
         <p className="text-gray-600 mb-6">Additional Information</p>
         <hr className="border-t-2 border-gray-300 my-4" />

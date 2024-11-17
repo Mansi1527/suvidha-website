@@ -10,7 +10,7 @@ const page = () => {
         {/* <Sidebar className='md:w-1/4' /> */}
         {/* <Details className='md:w-3/4' active="4" /> */}
         <Sidebar />
-        <Details active="5"/>
+        <Details active="4"/>
       </div>
     </div>
   );
