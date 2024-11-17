@@ -1,5 +1,5 @@
 'use client';
-import { CircleUser, MapPin, ShoppingCart, Star, ArrowLeft, HelpCircle, FileText } from 'lucide-react';
+import { CircleUser, MapPin, ShoppingCart, Star, ArrowLeft, HelpCircle, FileText, ArrowRight } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import PersonalDetails from '../detailsAccount/personalDetails';
 import Myorders from '../detailsAccount/myorders';
@@ -10,6 +10,7 @@ import FAQs from '../detailsAccount/faqs';
 import PrivacyPolicy from '../detailsAccount/Privacyplociy';
 import Terms from '../detailsAccount/Terms&policies';
 import PersonalDetailsMobile from '../detailsAccount/mobile/personalDetails';
+import Link from 'next/link';
 
 const Page = ({ active }: { active: string | null }) => {
   const data1 = [
@@ -177,6 +178,11 @@ const Page = ({ active }: { active: string | null }) => {
             </div>
           )
         ))}
+      </div>
+      <div className=" md:hidden border-2 border-gray-300 flex justify-center items-center py-2 mx-4  mb-10 rounded-lg text-red-500">
+        <Link href="/logout" className="flex gap-1 items-center font-semibold">
+          Logout <ArrowRight size={15} />
+        </Link>
       </div>
     </div>
   );
