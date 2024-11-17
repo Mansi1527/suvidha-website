@@ -1,10 +1,13 @@
-import Image from "next/image";
+
 import MyAccount from "@/app/myAccount/page"
+// import {RecoilRoot } from "recoil"
 export default function Home() {
   return (
     <div className="">
      
-        <MyAccount/>
+     <MyAccount/>
+  
+        
  
     </div>
   );

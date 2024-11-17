@@ -1,23 +1,23 @@
 'use client';
 import React, { useState } from 'react';
-import { CircleUser, ShoppingCart, MapPin, Star, CircleHelp, Smartphone, Copyright, ArrowRight } from 'lucide-react';
+import { CircleUser , ShoppingCart, MapPin, Star, CircleHelp, Smartphone, Copyright, ArrowRight } from 'lucide-react';
 import Link from 'next/link'; // Link component for redirection
 
 const Page = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const data1 = [
-    { logo: <CircleUser className="text-gray-500" />, name: "Personal details", desc: "Add, Change personal information" },
-    { logo: <ShoppingCart className="text-gray-500" />, name: "My Orders", desc: "See live, past & cancelled orders" },
-    { logo: <MapPin className="text-gray-500" />, name: "My Saved Addresses", desc: "Manage addresses" },
-    { logo: <Star className="text-gray-500" />, name: "Favorites", desc: "Saved products" },
+    { logo: <CircleUser  className="text-gray-500 md:size-5 size-3" />, name: "Personal details", desc: "Add, Change personal information" },
+    { logo: <ShoppingCart className="text-gray-500 md:size-5 size-3" />, name: "My Orders", desc: "See live, past & cancelled orders" },
+    { logo: <MapPin className="text-gray-500 md:size-5 size-3" />, name: "My Saved Addresses", desc: "Manage addresses" },
+    { logo: <Star className="text-gray-500 md:size-5 size-3" />, name: "Favorites", desc: "Saved products" },
   ];
 
   const data2 = [
-    { logo: <CircleHelp className="text-gray-500" />, name: "FAQs", desc: "Additional information", link: "/faq" },
-    { logo: <Smartphone className="text-gray-500" />, name: "Get Help", desc: "Help, support, chat with us & call" },
-    { logo: <Copyright className="text-gray-500" />, name: "Terms & Conditions", desc: "Terms & services", link: "/Terms&Policy" },
-    { logo: <Copyright className="text-gray-500" />, name: "Privacy Policy", desc: "Privacy policy", link: "/privacy-policy" },
+    { logo: <CircleHelp className="text-gray-500 md:size-5 size-3" />, name: "FAQs", desc: "Additional information", link: "/faq" },
+    { logo: <Smartphone className="text-gray-500 md:size-5 size-3" />, name: "Get Help", desc: "Help, support, chat with us & call" },
+    { logo: <Copyright className="text-gray-500 md:size-5 size-3" />, name: "Terms & Conditions", desc: "Terms & services", link: "/Terms&Policy" },
+    { logo: <Copyright className="text-gray-500 md:size-5 size-3" />, name: "Privacy Policy", desc: "Privacy policy", link: "/privacy-policy" },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Page = () => {
               className={`flex items-center space-x-4 pb-2 px-5 pt-4 rounded-lg ${activeIndex === index ? 'bg-[#e5e7e6] rounded-none' : 'bg-white'}`}
               onClick={() => setActiveIndex(index)}
             >
-              <h1>{item.logo}</h1>
+              <h1 className="md:size-5 size-1">{item.logo}</h1>
               <div>
                 <h3 className={`text-md font-semibold ${activeIndex === index ? 'text-[#2e9571]' : 'text-black'}`}>
                   {item.name}
