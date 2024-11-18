@@ -1,7 +1,7 @@
 import React from 'react';
 import Details from "@/app/components/details/page";
 import Sidebar from "@/app/components/sidebar/page";
-
+import { RecoilRoot } from "recoil";
 const page = () => {
   return (
     <div className='bg-[#f2f3f3]'>
@@ -9,8 +9,9 @@ const page = () => {
       <div className='md:flex flex-col md:flex-row md:gap-5 md:p-4'>
         {/* <Sidebar className='md:w-1/4' /> */}
         {/* <Details className='md:w-3/4' active="4" /> */}
-        <Sidebar />
-        <Details active="4"/>
+        
+        <RecoilRoot><Sidebar /><Details active="2"/></RecoilRoot>
+        
       </div>
     </div>
   );
